@@ -12,6 +12,8 @@ class Publisher(Base):
     name = sq.Column(sq.String(length=40), unique= True)
 
 
+
+
 class Book(Base):
     __tablename__ = 'book'
 
@@ -28,6 +30,7 @@ class Shop(Base):
     id = sq.Column(sq.Integer, primary_key = True)
     name = sq.Column(sq.String(length=40), unique= True)
 
+    
 
 class Stock(Base):
     __tablename__ = 'stock'

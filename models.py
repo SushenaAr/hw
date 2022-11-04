@@ -46,8 +46,8 @@ class Stock(Base):
 class Sale(Base):
     __tablename__ = 'sale'
     id = sq.Column(sq.Integer, primary_key = True)
-    count = sq.Column(sq.Integer)
-    count = sq.Column(sq.Date)
+    price = sq.Column(sq.Integer)
+    date_sale = sq.Column(sq.Date)
     id_stock = sq.Column(sq.Integer, sq.ForeignKey('stock.id'))
     count = sq.Column(sq.Integer)
 
